@@ -20,7 +20,7 @@ const Contact = () => {
   const [status, setStatus] = useState({});
   const onSubmit = (data) => {
     setBtnText("Submitting");
-    fetch("https://mysterious-tundra-32830.herokuapp.com/contact", {
+    fetch("https://edu-well-server-chi.vercel.app/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
